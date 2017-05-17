@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
-using Vega.Models;
 
-namespace Vega.Models
+namespace vega.Core.Models
 {
     public class Feature
     {

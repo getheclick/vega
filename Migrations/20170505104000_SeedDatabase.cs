@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Vega.Migrations
+namespace vega.Migrations
 {
     public partial class SeedDatabase : Migration
     {
@@ -24,16 +24,16 @@ namespace Vega.Migrations
             migrationBuilder.Sql("INSERT INTO Models (Name, MakeID) VALUES ('Make3-ModelB', (SELECT ID FROM Makes WHERE NAme = 'Make3'))");
             migrationBuilder.Sql("INSERT INTO Models (Name, MakeID) VALUES ('Make3-ModelC', (SELECT ID FROM Makes WHERE NAme = 'Make3'))");
 
-            migrationBuilder.Sql("INSERT INTO Features (Name) VALUES ('Feature1')");
-            migrationBuilder.Sql("INSERT INTO Features (Name) VALUES ('Feature2')");
-            migrationBuilder.Sql("INSERT INTO Features (Name) VALUES ('Feature3')");
+           // migrationBuilder.Sql("INSERT INTO Features (Name) VALUES ('Feature1')");
+           // migrationBuilder.Sql("INSERT INTO Features (Name) VALUES ('Feature2')");
+           // migrationBuilder.Sql("INSERT INTO Features (Name) VALUES ('Feature3')");
 
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql("DELETE FROM Makes WHERE Name IN ('Make1', 'Make2', 'Make3')");
-            migrationBuilder.Sql("DELETE FROM Features WHERE Name IN ('Feature1', 'Feature2', 'Feature3')");
+           // migrationBuilder.Sql("DELETE FROM Features WHERE Name IN ('Feature1', 'Feature2', 'Feature3')");
         }
     }
 }

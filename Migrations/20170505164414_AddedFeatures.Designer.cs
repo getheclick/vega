@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Vega.Persistence;
+using vega.Persistence;
 
-namespace Vega.Migrations
+namespace vega.Migrations
 {
     [DbContext(typeof(VegaDbContext))]
     [Migration("20170505164414_AddedFeatures")]

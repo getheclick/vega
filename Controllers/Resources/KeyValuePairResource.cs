@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Vega.Controllers.Resources;
-using Vega.Models;
+using vega.Controllers.Resources;
+using vega.Core.Models;
 
-namespace Vega.Controllers.Resources
+namespace vega.Controllers.Resources
 {
-    public class FeatureResource
+    public class KeyValuePairResource
     {
-        public FeatureResource()
+        public KeyValuePairResource()
         { }
 
         public int Id { get; set; }
