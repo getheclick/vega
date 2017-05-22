@@ -42,7 +42,8 @@ namespace vega.Mapping
                     //        removedFeatures.Add(f);
 
                     // -->> refactor with LINQ
-                    var removedFeatures = v.Features.Where(f => (!vr.Features.Contains(f.FeatureId)));
+                    // Remove unselected features
+                    var removedFeatures = v.Features.Where(f => !vr.Features.Contains(f.FeatureId)).ToList();
                     foreach (var f in removedFeatures)
                         v.Features.Remove(f);
 
